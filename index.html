@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Sebediah Calculator</title>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+		<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+	</head>
+	
+	<body bgcolor = "sky_blue">
+		<py-script output="result">
+		looping = 1
+			while looping == 1:
+				number1 = int(input('First number: '))
+				number2 = int(input('Second number: '))
+				operation = input("Operation (+ for addition, - for subtraction, / for division, * for multiplication, 'root' for root or ^ for powers (first number is base, second number is exponent for roots and powers)): ")
+				if operation == '+':
+					answer = number1 + number2
+				elif operation == '-':
+					answer = number1 - number2
+				elif operation == '/':
+					answer = number1 / number2
+				elif operation == '*':
+					answer = number1 * number2
+					elif operation == '^':
+						answer = number1 ** number2
+					elif operation == 'root':
+						answer = number1 ** (1 / number2)
+					else:
+						print('Invalid operation.')
+					print(answer)
+					print('Sebediah Calculator © 2026')
+		</py-script>
+	</body>
+</html>
